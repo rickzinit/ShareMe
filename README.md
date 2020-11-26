@@ -1,2 +1,3 @@
 # ShareMe
-A reusable framework that allows me to easily share code across apps
+
+A description of this package.
