@@ -32,4 +32,10 @@ public class ShareMe {
     public static var shareColor: UIColor {
         return self.colorFromHexString("006736")
     }
+    
+    
+    /// Returns object of 'UIColor' with the second most pleasing color
+    public static var secondaryColor: UIColor {
+        return self.colorFromHexString("FCFFFD")
+    }
 }
