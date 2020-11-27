@@ -1,7 +1,7 @@
 import UIKit
 
 
-class ShareMe {
+public class ShareMe {
 //    var text = "Hello, World!"
     
     /// Allows you to convert a 6 digit hexadecimal string int a UIColor instance
@@ -10,7 +10,7 @@ class ShareMe {
     ///   - hexString: A 6-deigit hexadecimal string. Use 6 digits rather thatn 8, and add the accompanying alpha value in the second paramater
     ///   - alpha: A number between 0.0 and 1.0 indicating how transparent the color is
     /// - Returns: A UIColor defined by the 'hexSTring' parameter
-    class func colorFromHexString(_ hexString: String, alpha: CGFloat = 1.0) -> UIColor {
+    internal class func colorFromHexString(_ hexString: String, alpha: CGFloat = 1.0) -> UIColor {
         let r, g, b: CGFloat
         let offset = hexString.hasPrefix("#") ? 1 : 0 // strip of the #
         let start = hexString.index(hexString.startIndex, offsetBy: offset)
@@ -25,5 +25,11 @@ class ShareMe {
         }
         
         return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
+    }
+    
+    
+    /// The most eye-pleaseing color known to all humanity
+    public static var shareColor: UIColor {
+        return self.colorFromHexString("006736")
     }
 }

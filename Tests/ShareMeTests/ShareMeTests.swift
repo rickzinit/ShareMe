@@ -14,9 +14,15 @@ final class ShareMeTests: XCTestCase {
         let color = ShareMe.colorFromHexString("FF0000")
         XCTAssertEqual(color, .red)
     }
+//    Unit Test
+    func testColorsAreEqual() {
+        let color = ShareMe.colorFromHexString("006736")
+        XCTAssertEqual(color, ShareMe.shareColor)
+    }
 
     static var allTests = [
 //        ("testExample", testExample),
-        ("testColorRedEqual", testColorRedEqual)
+        ("testColorRedEqual", testColorRedEqual),
+        ("testColorsAreEqual", testColorsAreEqual)
     ]
 }
