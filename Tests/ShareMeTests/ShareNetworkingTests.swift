@@ -31,7 +31,7 @@ import XCTest
 
 final class ShareNetworkingTests: XCTestCase {
     func testLoadDataCall() {
-        let manager = ShareMe.Networking.Manager()
+        let manager = Share.Networking.Manager()
         let expectation = XCTestExpectation(description: "Called for data")
         guard let url = URL(string: "https://raywenderlich.com") else {
             return XCTFail("Could not create URL properly")
