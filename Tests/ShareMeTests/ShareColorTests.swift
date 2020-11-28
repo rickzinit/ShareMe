@@ -1,7 +1,7 @@
 import XCTest
 @testable import ShareMe
 
-final class ShareMeTests: XCTestCase {
+final class ShareColorTests: XCTestCase {
     
 //    func testExample() {
 //        // This is an example of a functional test case.
@@ -11,18 +11,18 @@ final class ShareMeTests: XCTestCase {
 //    }
     
     func testColorRedEqual() {
-        let color = ShareMe.colorFromHexString("FF0000")
+        let color = Share.Color.fromHexString("FF0000")
         XCTAssertEqual(color, .red)
     }
 //    Unit Test
     func testColorsAreEqual() {
-        let color = ShareMe.colorFromHexString("006736")
-        XCTAssertEqual(color, ShareMe.shareColor)
+        let color = Share.Color.fromHexString("006736")
+        XCTAssertEqual(color, Share.Color.shareColor)
     }
     
     func testSecondaryColorsAreEqual() {
-        let color = ShareMe.colorFromHexString("FCFFFD")
-        XCTAssertEqual(color, ShareMe.secondaryColor)
+        let color = Share.Color.fromHexString("FCFFFD")
+        XCTAssertEqual(color, Share.Color.secondaryColor)
     }
 
     static var allTests = [
