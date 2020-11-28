@@ -7,6 +7,6 @@
 
 import Foundation
 
-public struct Share {
+public struct ShareMe {
     
 }

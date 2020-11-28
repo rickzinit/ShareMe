@@ -1,7 +1,7 @@
 import UIKit
 
 
-extension Share {
+extension ShareMe {
     
     public class Color {
         

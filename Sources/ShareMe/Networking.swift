@@ -28,7 +28,7 @@
 
 import Foundation
 
-extension Share {
+extension ShareMe {
   public class Networking {
     
     /// Responsible for handling all networking calls

@@ -11,18 +11,18 @@ final class ShareColorTests: XCTestCase {
 //    }
     
     func testColorRedEqual() {
-        let color = Share.Color.fromHexString("FF0000")
+        let color = ShareMe.Color.fromHexString("FF0000")
         XCTAssertEqual(color, .red)
     }
 //    Unit Test
     func testColorsAreEqual() {
-        let color = Share.Color.fromHexString("006736")
-        XCTAssertEqual(color, Share.Color.shareColor)
+        let color = ShareMe.Color.fromHexString("006736")
+        XCTAssertEqual(color, ShareMe.Color.shareColor)
     }
     
     func testSecondaryColorsAreEqual() {
-        let color = Share.Color.fromHexString("FCFFFD")
-        XCTAssertEqual(color, Share.Color.secondaryColor)
+        let color = ShareMe.Color.fromHexString("FCFFFD")
+        XCTAssertEqual(color, ShareMe.Color.secondaryColor)
     }
 
     static var allTests = [
